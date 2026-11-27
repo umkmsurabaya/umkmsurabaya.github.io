@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pijat Khusus Wanita Malang</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+/* VOICE: tenang, hangat, terpercaya — layanan perawatan untuk ibu & wanita
+   IDEA: kartu layanan klinik spa yang rapi, seperti brosur biru-putih aslinya
+   PICTURE: foto terapis besar dalam bingkai lengkung dengan daun biru
+   COLOUR and TYPE: navy #1b3f86, biru muda #e7effb, aksen hijau WA; Plus Jakarta Sans
+   LAYOUT: hero dua kolom di layar lebar, menumpuk di HP; tombol WA melayang di HP */
+:root{color-scheme:light dark;
+--bg:light-dark(#f4f8fe,#0e1a33);--card:light-dark(#ffffff,#152649);--ink:light-dark(#14244a,#eaf0fb);
+--soft:light-dark(#4b5d82,#b5c3e0);--navy:light-dark(#1b3f86,#8fb2f2);--sky:light-dark(#e2ecfa,#1b3260);
+--line:light-dark(#d3e0f4,#26406f);--wa:#1faa59}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 "Plus Jakarta Sans",system-ui,sans-serif;overflow-x:clip}
+a{color:inherit}
+.wrap{max-width:1100px;margin:0 auto;padding:0 max(5vw,18px)}
+.band{padding:clamp(36px,5vw,72px) 0}
+h1{font-size:clamp(34px,6vw,52px);line-height:1.05;margin:10px 0 14px;font-weight:800;text-wrap:balance;color:var(--navy)}
+h2{font-size:clamp(24px,3.4vw,32px);line-height:1.15;margin:0 0 18px;font-weight:800;text-wrap:balance}
+.tag{display:inline-block;background:var(--sky);color:var(--navy);font-weight:700;font-size:14px;padding:6px 14px;border-radius:99px}
+.lead{font-size:17px;color:var(--soft);max-width:34em;margin:0 0 24px}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 24px;border-radius:14px;background:var(--wa);color:#fff;font-weight:700;font-size:17px;text-decoration:none;box-shadow:0 8px 20px -8px rgba(31,170,89,.7);transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}.btn:focus-visible{outline:3px solid var(--navy);outline-offset:3px}
+.btn svg{width:22px;height:22px;flex:none}
+.num{font-size:14px;color:var(--soft);margin-top:10px}
+.hero{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(24px,4vw,56px);align-items:center}
+.photo{position:relative;justify-self:center;width:min(100%,360px)}
+.photo .frame{border-radius:200px 200px 28px 28px;overflow:hidden;background:var(--sky);aspect-ratio:364/560;box-shadow:0 30px 60px -30px rgba(27,63,134,.55)}
+.photo img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.photo .price{position:absolute;left:-18px;bottom:28px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:12px 18px;box-shadow:0 14px 30px -16px rgba(20,36,74,.5)}
+.price small{display:block;font-size:13px;color:var(--soft)}
+.price b{font-size:28px;color:var(--navy);line-height:1.1;white-space:nowrap}
+.leaf{position:absolute;right:-26px;top:30px;width:90px;opacity:.9}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.fact{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px;display:flex;gap:14px}
+.ic{flex:none;width:46px;height:46px;border-radius:14px;background:var(--sky);color:var(--navy);display:grid;place-items:center}
+.ic svg{width:24px;height:24px}
+.fact h3{margin:0 0 2px;font-size:16px}.fact p{margin:0;color:var(--soft);font-size:15px}
+.sky{background:var(--sky)}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(20px,4vw,48px);align-items:start}
+ul.ok{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+ul.ok li{display:flex;gap:12px;align-items:flex-start;background:var(--card);border-radius:16px;padding:14px 16px;font-weight:500}
+ul.ok svg{flex:none;width:24px;height:24px;color:var(--navy);margin-top:1px}
+.tarif{background:var(--navy);color:#fff;border-radius:24px;padding:28px}
+:root .tarif{background:light-dark(#1b3f86,#1f3d78)}
+.tarif .big{font-size:clamp(40px,7vw,56px);font-weight:800;line-height:1;white-space:nowrap}
+.tarif p{margin:6px 0 0;opacity:.9}
+.tarif ul{margin:18px 0 0;padding-left:20px}
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;counter-reset:s}
+.step{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px}
+.step b{display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:var(--navy);color:var(--card);font-size:16px;margin-bottom:10px}
+.step p{margin:0;color:var(--soft)}
+.step h3{margin:0 0 4px;font-size:17px}
+.cta{text-align:center}
+.cta .lead{margin:0 auto 24px}
+footer{text-align:center;font-size:13px;color:var(--soft);padding:24px 0 100px}
+.float{display:none}
+@media(max-width:760px){
+ .hero{grid-template-columns:1fr}.hero .photo{order:-1;width:min(78%,300px)}
+ .facts,.steps,.two{grid-template-columns:1fr}
+ .photo .price{left:-10px}.leaf{right:-14px;width:70px}
+ .float{display:flex;position:fixed;left:16px;right:16px;bottom:16px;justify-content:center;z-index:5}
+}
+@media(prefers-reduced-motion:reduce){.btn{transition:none}}
+</style>
+</head>
+<body>
+
+<header class="band">
+ <div class="wrap hero">
+  <div>
+   <span class="tag">Terapis wanita profesional</span>
+   <h1>Pijat Khusus Wanita, datang ke rumah Anda</h1>
+   <p class="lead">Layanan pijat tradisional untuk relaksasi, dikerjakan oleh terapis wanita. Khusus pelanggan wanita di wilayah Malang Kota. Anda cukup istirahat di rumah, terapis yang datang.</p>
+   <a class="btn wa" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2c.2-.6.2-1.1.1-1.2l-.4-.3Z"/></svg>Pesan lewat WhatsApp</a>
+   <div class="num">WA: 0813-9891-1056</div>
+  </div>
+  <div class="photo">
+   <svg class="leaf" viewBox="0 0 90 120" aria-hidden="true"><g fill="#3d6fc9" opacity=".85"><path d="M45 118C44 80 50 40 70 6" stroke="#3d6fc9" stroke-width="2" fill="none"/><ellipse cx="62" cy="28" rx="16" ry="7" transform="rotate(-40 62 28)"/><ellipse cx="40" cy="44" rx="15" ry="6" transform="rotate(30 40 44)"/><ellipse cx="62" cy="58" rx="15" ry="6" transform="rotate(-30 62 58)"/><ellipse cx="38" cy="76" rx="14" ry="6" transform="rotate(35 38 76)"/><ellipse cx="58" cy="90" rx="13" ry="5" transform="rotate(-25 58 90)"/></g></svg>
+   <div class="frame"><img src="foto.jpg" alt="Terapis wanita berhijab tersenyum memegang handuk"></div>
+   <div class="price"><small>Tarif per sesi 60 menit</small><b>Rp100.000</b></div>
+  </div>
+ </div>
+</header>
+
+<section class="band" style="padding-top:0">
+ <div class="wrap facts">
+  <div class="fact"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></div><div><h3>Jadwal</h3><p>Senin–Kamis<br>09.00–16.00 WIB</p></div></div>
+  <div class="fact"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11 12 4l9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1Z"/></svg></div><div><h3>Layanan</h3><p>Panggilan, terapis datang ke rumah Anda</p></div></div>
+  <div class="fact"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg></div><div><h3>Area</h3><p>Khusus pelanggan wanita di Malang Kota</p></div></div>
+ </div>
+</section>
+
+<section class="band sky">
+ <div class="wrap two">
+  <div>
+   <h2>Manfaat yang Anda rasakan</h2>
+   <ul class="ok">
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="12" cy="12" r="10"/><path d="m7.5 12.5 3 3 6-6.5"/></svg>Meredakan lelah dan pegal-pegal</li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="12" cy="12" r="10"/><path d="m7.5 12.5 3 3 6-6.5"/></svg>Menenangkan pikiran dan membuat rileks</li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="12" cy="12" r="10"/><path d="m7.5 12.5 3 3 6-6.5"/></svg>Pijatan nyaman dan tidak sakit</li>
+    <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><circle cx="12" cy="12" r="10"/><path d="m7.5 12.5 3 3 6-6.5"/></svg>Lebih tenang karena terapisnya wanita</li>
+   </ul>
+  </div>
+  <div class="tarif">
+   <div>Tarif</div>
+   <div class="big">Rp100.000</div>
+   <p>per sesi, 60 menit</p>
+   <ul>
+    <li>Gratis transport</li>
+    <li>Terapis datang ke rumah</li>
+   </ul>
+  </div>
+ </div>
+</section>
+
+<section class="band">
+ <div class="wrap">
+  <h2>Cara pesan</h2>
+  <div class="steps">
+   <div class="step"><b>1</b><h3>Chat WhatsApp</h3><p>Tekan tombol pesan, lalu kirim nama dan alamat Anda di Malang Kota.</p></div>
+   <div class="step"><b>2</b><h3>Pilih jadwal</h3><p>Tentukan hari dan jam, Senin–Kamis pukul 09.00–16.00 WIB.</p></div>
+   <div class="step"><b>3</b><h3>Terapis datang</h3><p>Terapis wanita datang ke rumah. Anda tinggal bersantai.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="band sky cta">
+ <div class="wrap">
+  <h2>Waktunya istirahat sejenak</h2>
+  <p class="lead">Pesan sesi pijat Anda sekarang lewat WhatsApp.</p>
+  <a class="btn wa" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Z"/></svg>Chat WhatsApp sekarang</a>
+  <div class="num">WA: 0813-9891-1056</div>
+ </div>
+</section>
+
+<footer>Pijat Khusus Wanita · Panggilan ke rumah · Malang Kota</footer>
+
+<div class="float"><a class="btn wa" href="#" style="width:100%;justify-content:center"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Z"/></svg>Pesan lewat WhatsApp</a></div>
+
+<script>
+{
+ const url = 'https://wa.me/6281398911056?text=' + encodeURIComponent('Halo, saya mau pesan pijat khusus wanita. Nama: ... Alamat: ... Jadwal yang diinginkan: ...');
+ document.querySelectorAll('a.wa').forEach(a => { a.href = url; a.target = '_blank'; a.rel = 'noopener'; });
+}
+</script>
+</body>
+</html>
